@@ -1,0 +1,3 @@
+{% load qr_code %}
+
+{% qr_from_text  order.orderdetails.ticket_code  size="m" image_format="png" error_correction="L" %}

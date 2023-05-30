@@ -1,0 +1,75 @@
+{% load static %}
+
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+   <title>Email-Collabo</title>
+</head>
+<body style="padding:0 !important; margin:0 !important; color: #fff;  font-family:'Muli', Arial,sans-serif; ">
+<table width="100%"style="background: rgb(0,110,254);
+         background: linear-gradient(253deg, rgba(0,110,254,1) 0%, rgba(73,74,255,1) 50%);">
+   <!--========== header start ======================-->
+   <tr>
+      <td style="margin:0 auto; display: table; margin-top: 25px;"><img src={{ order.orderdetails.logo }} style="width: 35%; margin: 0 auto; display: table;" /></td>
+   </tr>
+   <tr>
+      <th align="center" style="font-size: 30px;">Collabo</th>
+   </tr>
+   <tr>
+      <th align="center" style="display: block; margin-top: 25px; margin-bottom: 10px; font-size: 25px;">{{ order.orderdetails.cust_name }}, <br/> Your ticket has been confirmed. </th>
+   </tr>
+   <tr>
+      <th> <img src={{ order.orderdetails.appicon }} style="width: 25%;" /> </th>
+   </tr>
+   <tr>
+      <td> <span style=" width: 150px; height: 50px; background: #fff; margin: 0 auto; display: block; padding: 0 15px 0 15px; font-size: 25px; font-weight: bold; border-radius: 5px; line-height: 50px; text-align: center; color: #006EFE;">
+               <a href="http://onelink.to/faqtf8" style="text-decoration:none; "> Get the app</a></span><br/>
+      </td>
+   </tr>
+   <!--========== header end ======================-->
+
+   <!--========== event name & Qrcode start ======================-->
+   <tr>
+      <th style="margin: 15px auto; display: table; color: #1e0a3c; text-align: left; background: #fff; padding: 10px; border-radius: 10px; width: 50%;" align="center">
+         {% load qr_code %}
+
+         <span style="text-align: center; display: block; font-size: 30px; margin-top: 20px; ">{{ order.orderdetails.event }}</span>
+         <img src="cid:{{ order.orderdetails.ticket_code }}.png" alt="Ticket Code!" style="width: 65%; margin: 0 auto; display: table;" />
+         <span style="text-align: center; display: block; font-size: 20px; margin-top: 10px; ">{{ order.orderdetails.ticket_code }}</span>
+      </th>
+   </tr>
+   <!--========== event name & Qrcode end ======================-->
+
+   <!--========== date time location start ======================-->
+   <tr>
+      <th align="center" bgcolor="#fff" style=" color: #1e0a3c;width: 50%;display: table;margin: 0 auto;text-align: left;padding: 20px;border-radius: 10px;">
+         {% for list in order.itemdetails %}
+         <span> <img src={{ order.orderdetails.ticket }}  style="vertical-align: bottom;" /> </span> {{ list.count}} &#10006;{{ list.item_name }}
+         {% endfor %}
+
+         <br/> <br/>
+         <span style="display: flex;"> <img src={{ order.orderdetails.time }}> </span> <span style="display: flex; margin-top: -20px; margin-left: 28px;">Starts at : {{ order.orderdetails.start_date }} </span> <br/>
+         <span style="display: flex;"> <img src={{ order.orderdetails.time }}> </span> <span style="display: flex; margin-top: -20px; margin-left: 28px;">Ends at : {{ order.orderdetails.end_date }}  </span> <br/>
+
+         <span style="display: flex;"> <img src={{ order.orderdetails.location }} /> </span>
+         <span style="display: flex; margin-top: -20px; margin-left: 25px;">  {{ order.orderdetails.venue_address|linebreaks }}</span>
+      </th>
+   </tr>
+   <!--========== date time location end ======================-->
+
+   <!--========== social media open ======================-->
+   <tr>
+      <td style="display: table; margin: 10px auto;">
+               <span style="margin-right: 5px; width: 10%;"> <a href="https://www.facebook.com/collaboapp
+"> <img src= {{ order.orderdetails.fb }} /></a> </span>
+         <span style="margin-right: 5px; width: 10%;"> <a href="https://twitter.com/CollaboHQ
+"><img src= {{ order.orderdetails.tw }} /> </a> </span>
+         <span style="margin-right: 5px; width: 10%;"><a href="https://instagram.com/collabo_hq?igshid=kqa6829ywf28" ><img src= {{ order.orderdetails.in }} /> </a> </span>
+         <span style="margin-right: 5px; width: 10%;"> <a href="https://in.linkedin.com/company/collaboapp
+"> <img src= {{ order.orderdetails.li }} /></a></span>
+      </td>
+   </tr>
+   <!--========== social media close ======================-->
+</table>
+</body>
+</html>

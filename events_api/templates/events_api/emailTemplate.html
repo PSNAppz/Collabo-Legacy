@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title> {{ order.orderdetails.event }} </title>
+    <style type="text/css">
+    #outlook a {padding:0;}
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} /* force default font sizes */
+    .ExternalClass {width:100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Hotmail */
+    table td {border-collapse: collapse;}
+
+    @media only screen and (min-width: 600px) { .maxW { width:600px !important; } }
+
+  </style>
+</head>
+<body style="margin: 0px; padding: 0px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<table bgcolor="#ffffff" width="75%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+
+            <tbody align="center" >
+            <tr>
+                <td align="center"  colspan="10" valign="middle" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 24px; color: #353535; padding:3%; padding-top:40px; padding-bottom:20px;"> <p> Congratulations! Your ticket has been confirmed. </p>
+                    <p style="font-size:13px;color:darkgray;padding-bottom:30px">
+                        (Please keep this ticket for fast check in)
+                    </p>
+                </td>
+                <tr>
+                <td align="center" width="100%" colspan="10" valign="middle" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 24px; color: #353535; padding:3%; padding-top:40px; padding-bottom:20px;">
+                    <img   src="{{ order.orderdetails.event_image }}" alt="Ticket confirmed" style="width:180px;height:180px"><br>
+                    {{ order.orderdetails.event }}
+                </td></tr>
+
+
+
+
+
+
+
+
+
+            </tr>
+            <!--<tr align="center">Event Image-->
+                <!--<td><p>QRCode: &nbsp;<b><img src= "{{ order.orderdetails.event_image }}" alt="T!" style="width:300px;height:300px"></b></p></td>-->
+            <!--</tr>-->
+
+            <tr>
+                <td colspan="5" align="left" valign="middle" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 24px; color: #353535; padding:3%; padding-top:40px; padding-bottom:20px;">
+
+                </td>
+            </tr>
+            <tr align="center">
+
+
+
+
+
+
+
+
+
+                <td align="left"  colspan="5" valign="middle" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 15px; color: #353535; padding:3%; padding-top:40px; padding-bottom:30px;">
+                    {% load qr_code %}
+
+                    <h5 style="color:#26befb;margin:0px">VENUE</h5>
+                    <div style="margin:0px">{{ order.orderdetails.venue }}</div>
+
+
+                    <h5 style="color:#26befb;margin:0px">CUSTOMER</h5>
+                    <div style="margin:0px">{{ order.orderdetails.cust_name }}</div>
+                    <div style="margin:0px">{{ order.orderdetails.cust_phone }}</div>
+
+                    <h5 style="color:#26befb;margin:0px">TICKET CODE</h5>
+                    <div style="margin:0px">{{ order.orderdetails.ticket_code }}</div>
+                    <h5 style="color:#26befb;margin:0px">NO. OF TICKETS</h5>
+                    {% for list in order.itemdetails %}
+                        <label >{{ list.item_name }} X {{ list.count}}</label><br />
+                    {% endfor %}
+
+
+
+
+                    <h4 style="color:#26befb;margin:0px">Grand Total</h4>
+                    <div style="margin:0px">{{ order.orderdetails.grandtotal }}</div>
+
+
+
+                </td>
+
+                <td><p> <img src= "cid:{{ order.orderdetails.ticket_code }}.png" alt="Ticket Code!" style="width:300px;height:300px"></p></td>
+
+            </tr>
+
+            <tr>
+
+                <td> Date Begins </td>
+
+                <td> Date Ends </td>
+
+            </tr>
+            <tr>
+
+                <td> {{  order.orderdetails.date_begin }} {{  order.orderdetails.begin }} </td>
+                <td>{{  order.orderdetails.date_end }}  {{  order.orderdetails.end }} </td>
+
+            </tr>
+
+
+
+
+
+
+
+               <tr> <td colspan="5" align="right" valign="bottom">
+                    <a href="https://collabo.in/" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en-GB&amp;q=https://collabo.in/&amp;source=gmail&amp;ust=1553769251871000&amp;usg=AFQjCNGZ7t6EOdfrpH74fZUvzuws1rEpYw">
+                        <img src="https://ci5.googleusercontent.com/proxy/CPjsR0cvdg0dX0BzNwuSbkwOumN-U8l86B3S60CIXRtEJl5qHlC9oUZTEzYhnHXvz3o=s0-d-e1-ft#https://www.collabo.in/logo.png" alt="Collabo" style="width:51px;height:51px">
+                    </a>
+                   <h1 style="margin:0px">Collabo</h1>
+
+                </td>
+               </tr>
+            </tbody></table>
+
+
+
+   </body></html>

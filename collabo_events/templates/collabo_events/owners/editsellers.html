@@ -1,0 +1,107 @@
+{% extends 'collabo_events/owners/base.html' %}
+{% load staticfiles %}
+{% block content %}
+{% csrf_token %}
+
+
+
+
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Upload Movies</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Edit Movies</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-7 col-4 align-self-center">
+                        <a href="https://wrappixel.com/templates/materialpro/" class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down"> Add Seller</a>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-block">
+                                This is some text within a card block.
+
+
+                                     {{ form.as_table }}
+
+
+
+                                     <!-- <input type="file" name="myfile">  -->
+                               <!--          <button type="submit">Upload</button>   -->
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2017 Material Pro Admin by wrappixel.com
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+  {% endblock %}
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <!--<script src=" {% static  'vdocipher/assets/plugins/jquery/jquery.min.js' %}"></script>-->
+    <!--&lt;!&ndash; Bootstrap tether Core JavaScript &ndash;&gt;-->
+    <!--<script src=" {% static  'vdocipher/assets/plugins/bootstrap/js/tether.min.js' %}"></script>-->
+    <!--<script src=" {% static  'vdocipher/assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>-->
+    <!--&lt;!&ndash; slimscrollbar scrollbar JavaScript &ndash;&gt;-->
+    <!--<script src="js/jquery.slimscroll.js"></script>-->
+    <!--&lt;!&ndash;Wave Effects &ndash;&gt;-->
+    <!--<script src="js/waves.js"></script>-->
+    <!--&lt;!&ndash;Menu sidebar &ndash;&gt;-->
+    <!--<script src="js/sidebarmenu.js"></script>-->
+    <!--&lt;!&ndash;stickey kit &ndash;&gt;-->
+    <!--<script src=" {% static  'vdocipher/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js' %}"></script>-->
+    <!--&lt;!&ndash;Custom JavaScript &ndash;&gt;-->
+    <!--<script src="js/custom.min.js"></script>-->

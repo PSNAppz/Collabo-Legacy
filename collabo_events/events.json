@@ -1,0 +1,114 @@
+{
+  "count": 1,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "event_id": 6,
+      "category": {
+        "category_id": 3,
+        "category_name": "music show",
+        "category_weight": 2
+      },
+      "medias": [
+        {
+          "id": 6,
+          "category_name": "image1",
+          "upload": "http://192.168.0.101:8000/media/Catagory_image1/sampleevent.jpeg"
+        },
+        {
+          "id": 7,
+          "category_name": "video 2",
+          "upload": "http://192.168.0.101:8000/media/Catagory_video%202/VID-20140728-WA0010.mp4"
+        }
+      ],
+      "slot_time": [
+        {
+          "id": 19,
+          "event_start_time": "2019-03-28T06:00:00.000000Z",
+          "event_end_time": "2019-03-28T18:00:00.000000Z"
+        },
+        {
+          "id": 20,
+          "event_start_time": "2019-03-29T06:00:00.000000Z",
+          "event_end_time": "2019-03-29T18:00:00.000000Z"
+        }
+      ],
+      "pricing_category": [
+        {
+          "id": 11,
+          "title": "Gate C Entry",
+          "description": "Gate C openings",
+          "price": 1180,
+          "discounted_price": 1000,
+          "max_size": 1000
+        },
+        {
+          "id": 13,
+          "title": "Gate B Entry",
+          "description": "Gate B openings",
+          "price": 2400,
+          "discounted_price": 2300,
+          "max_size": 2000
+        },
+        {
+          "id": 14,
+          "title": "Gate A entry",
+          "description": "Gate A  Openings",
+          "price": 5500,
+          "discounted_price": 5000,
+          "max_size": 3000
+        }
+      ],
+      "event_cityname": {
+        "name": "Kayankulam"
+      },
+      "ticket_type": "Single Ticket",
+      "button_text": {
+        "id": 1,
+        "text": "Book now"
+      },
+      "external_url": "http://www.google.com",
+      "event_title": "AR Rahman Show",
+      "event_slug": "test",
+      "event_venue": {
+        "status": "OK",
+        "candidates": [
+          {
+            "name": "Adlux Convention Center And Wedding Halls",
+            "geometry": {
+              "location": {
+                "lat": 10.235311,
+                "lng": 76.372737
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 10.23663197989272,
+                  "lng": 76.37435387989272
+                },
+                "southwest": {
+                  "lat": 10.23393232010728,
+                  "lng": 76.37165422010727
+                }
+              }
+            },
+            "opening_hours": {
+              "open_now": true
+            },
+            "formatted_address": "Angamaly, Cable Junction, Ernakulam District, National Highway 47, Karukutty, Kerala 683576, India"
+          }
+        ]
+      },
+      "description": "<pre id=\"7ea7\" class=\"graf graf--pre graf-after--p\" style=\"overflow: auto; font-family: Menlo, Monaco, 'Courier New', Courier, monospace; font-size: 16px; margin-top: 43px; margin-bottom: 0px; background: rgba(0, 0, 0, 0.05); padding: 20px; white-space: pre-wrap; color: rgba(0, 0, 0, 0.84);\">from django import forms<br />from app.models import Genre<br /><br /><br />class MovieChangeListForm(forms.ModelForm):<br />    # here we only need to define the field we want to be editable<br />    genre = forms.ModelMultipleChoiceField(<br />        queryset=Genre.objects.all(), required=False)</pre>\r\n<p>&nbsp;</p>",
+      "host_details": "<pre id=\"7ea7\" class=\"graf graf--pre graf-after--p\" style=\"overflow: auto; font-family: Menlo, Monaco, 'Courier New', Courier, monospace; font-size: 16px; margin-top: 43px; margin-bottom: 0px; background: rgba(0, 0, 0, 0.05); padding: 20px; white-space: pre-wrap; color: rgba(0, 0, 0, 0.84);\">from django import forms<br />from app.models import Genre<br /><br /><br />class MovieChangeListForm(forms.ModelForm):<br />    # here we only need to define the field we want to be editable<br />    genre = forms.ModelMultipleChoiceField(<br />        queryset=Genre.objects.all(), required=False)</pre>\r\n<p>&nbsp;</p>",
+      "itinerary": "<pre id=\"7ea7\" class=\"graf graf--pre graf-after--p\" style=\"overflow: auto; font-family: Menlo, Monaco, 'Courier New', Courier, monospace; font-size: 16px; margin-top: 43px; margin-bottom: 0px; background: rgba(0, 0, 0, 0.05); padding: 20px; white-space: pre-wrap; color: rgba(0, 0, 0, 0.84);\">from django import forms<br />from app.models import Genre<br /><br /><br />class MovieChangeListForm(forms.ModelForm):<br />    # here we only need to define the field we want to be editable<br />    genre = forms.ModelMultipleChoiceField(<br />        queryset=Genre.objects.all(), required=False)</pre>\r\n<p>&nbsp;</p>",
+      "cancellation_policy": "<pre id=\"7ea7\" class=\"graf graf--pre graf-after--p\" style=\"overflow: auto; font-family: Menlo, Monaco, 'Courier New', Courier, monospace; font-size: 16px; margin-top: 43px; margin-bottom: 0px; background: rgba(0, 0, 0, 0.05); padding: 20px; white-space: pre-wrap; color: rgba(0, 0, 0, 0.84);\">from django import forms<br />from app.models import Genre<br /><br /><br />class MovieChangeListForm(forms.ModelForm):<br />    # here we only need to define the field we want to be editable<br />    genre = forms.ModelMultipleChoiceField(<br />        queryset=Genre.objects.all(), required=False)</pre>\r\n<p>&nbsp;</p>",
+      "location": "SRID=4326;POINT (76.372737 10.235311)",
+      "upload": null,
+      "event_start_time": "2019-03-28T06:00:00.000000Z",
+      "event_end_time": "2019-03-29T18:00:00.000000Z",
+      "Latitude": "10.2353110",
+      "Longitude": "76.3727370"
+    }
+  ]
+}

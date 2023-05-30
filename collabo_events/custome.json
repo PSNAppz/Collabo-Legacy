@@ -1,0 +1,10 @@
+[
+  {
+    "pk": "4b678b301dfd8a4e0dad910de3ae245b",
+    "model": "sessions.session",
+    "fields": {
+      "expire_date": "2013-01-16T08:16:59.844Z",
+
+    }
+  }
+]
