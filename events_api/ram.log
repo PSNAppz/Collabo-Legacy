@@ -1,0 +1,146 @@
+2023-06-06 05:38:27.780 INFO autoreload - trigger_reload: /Volumes/Work/Zartek/Collabo-main/events_api/urls.py changed, reloading.
+2023-06-06 06:02:59.324 INFO autoreload - trigger_reload: /Volumes/Work/Zartek/Collabo-main/CE/settings.py changed, reloading.
+2023-06-06 06:48:52.860 INFO autoreload - trigger_reload: /Volumes/Work/Zartek/Collabo-main/CE/settings.py changed, reloading.
+2023-06-06 06:48:52.861 INFO autoreload - trigger_reload: /Volumes/Work/Zartek/Collabo-main/CE/settings.py changed, reloading.
+2023-06-06 12:27:33.160 ERROR exception - response_for_exception: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-06-06 12:27:33.190 WARNING log - log_response: Bad Request: /
+2023-06-06 12:27:33.264 ERROR exception - response_for_exception: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-06-06 12:27:33.276 WARNING log - log_response: Bad Request: /favicon.ico
+2023-06-06 12:27:47.180 INFO autoreload - trigger_reload: /Volumes/Work/Zartek/Collabo-main/CE/settings.py changed, reloading.
+2023-06-06 12:27:52.661 ERROR log - log_response: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/crispy_forms/templatetags/crispy_forms_filters.py", line 116, in as_crispy_field
+    template = get_template(template_path)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/field.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/field.html
+2023-06-06 12:27:52.721 WARNING log - log_response: Not Found: /favicon.ico
+2023-06-06 12:28:05.864 ERROR log - log_response: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/crispy_forms/templatetags/crispy_forms_filters.py", line 116, in as_crispy_field
+    template = get_template(template_path)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/field.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Volumes/Work/Zartek/Collabo-main/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/field.html

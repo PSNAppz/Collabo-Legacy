@@ -9,7 +9,6 @@ from rest_framework.generics import get_object_or_404
 
 from rest_framework import exceptions
 
-from rest_framework_social_oauth2.views import ConvertTokenView
 from oauth2_provider.models import AccessToken
 from rest_framework.response import Response
 import datetime as dtime

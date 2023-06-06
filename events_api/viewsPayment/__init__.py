@@ -1,0 +1,2 @@
+RAZORPAY_API_SECRET="rzp_test_1DP5mmOlF5G5ag"
+RAZORPAY_API_KEY="rzp_test_1DP5mmOlF5G5ag"

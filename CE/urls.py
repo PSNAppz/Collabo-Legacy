@@ -1,11 +1,10 @@
 from django.contrib import admin
 from django.urls import path,include
-from django.conf.urls import url, include
+from django.urls import re_path as url, include
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-from django.conf.urls import include, url
 from qr_code import urls as qr_code_urls
 from filebrowser.sites import site
 
@@ -24,7 +23,7 @@ urlpatterns = [
     path('api/', include('events_api.urls')),
 
     path('auth/', include('events_api.urls')),
-    path('auth/', include('rest_framework_social_oauth2.urls')),
+    # path('auth/', include('rest_framework_social_oauth2.urls')),
     url(r'^tinymce/', include('tinymce.urls')),
 
     url(r'^qr_code/', include(qr_code_urls, namespace="qr_code")),

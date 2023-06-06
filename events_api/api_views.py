@@ -8,7 +8,6 @@ from rest_framework import status, generics
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.exceptions import APIException
 from rest_framework.generics import get_object_or_404
-from rest_framework_social_oauth2.views import ConvertTokenView
 from drf_accountkit.views import LoginSuccess
 from oauth2_provider.models import AccessToken
 from rest_framework.response import Response

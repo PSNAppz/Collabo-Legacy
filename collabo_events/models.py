@@ -13,7 +13,6 @@ from django.db.models.signals import post_save,pre_save,pre_delete
 #from django.db import models
 from django.contrib.postgres.fields import JSONField
 from django.contrib import admin
-from storages.backends.s3boto import S3BotoStorage
 from django.core.files.storage import default_storage as storage
 
 from tinymce.models import HTMLField
